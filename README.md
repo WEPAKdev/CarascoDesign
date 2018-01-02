@@ -1,3 +1,5 @@
+Symfony version : 2.8
+
 Symfony Standard Edition
 ========================
 
