@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Carasco Design{% endblock %}</title>
+        {% block stylesheets %}
+            {% stylesheets "bundles/framework/css/specstyles/*.scss" filter="compass" %}
+                <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="main">
+                {% block topmenu %}{% endblock %}
+                {% block body %}{% endblock %}
+                {% block javascripts %}{% endblock %}
+            </div>
+        </div>
+    {% javascripts 'bundles/framework/js/*' %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    </body>
+</html>
