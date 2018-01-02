@@ -1,0 +1,73 @@
+<component name="libraryTable">
+  <library name="greensock" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/EaselPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/RoundPropsPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/TextPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/ScrollToPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/DirectionalRotationPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/ColorPropsPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/RaphaelPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/TweenLite.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/TweenMax.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/TimelineMax.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/jquery.gsap.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/TimelineLite.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/utils/Draggable.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/easing/EasePack.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/EndArrayPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/AttrPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/BezierPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/TEMPLATE_Plugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/ModifiersPlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/CSSRulePlugin.js" />
+        <item url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/CSSPlugin.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/EaselPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/RoundPropsPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/TextPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/ScrollToPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/DirectionalRotationPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/ColorPropsPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/RaphaelPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/jquery.gsap.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/TimelineMax.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/TweenLite.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/TimelineLite.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/TweenMax.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/utils/Draggable.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/easing/EasePack.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/RoundPropsPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/AttrPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/CSSPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/DirectionalRotationPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/CSSRulePlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/EndArrayPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/ModifiersPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/ScrollToPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/ColorPropsPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/TextPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/BezierPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/EaselPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/minified/plugins/RaphaelPlugin.min.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/TweenLite.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/TweenMax.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/TimelineMax.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/jquery.gsap.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/TimelineLite.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/utils/Draggable.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/easing/EasePack.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/EndArrayPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/AttrPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/BezierPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/TEMPLATE_Plugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/ModifiersPlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/CSSRulePlugin.js" />
+      <root url="file://$USER_HOME$/Downloads/GreenSock-JS-master/src/uncompressed/plugins/CSSPlugin.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

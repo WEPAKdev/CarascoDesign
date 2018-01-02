@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'montserrat';
+  src: url("/bundles/framework/css/fonts/montserrat/Montserrat-ExtraLight.ttf") format("TrueType"); }
+.mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(115deg, white 0%, white 80%, rgba(255, 255, 255, 0) 100%);
+  background-size: 200% 200%;
+  transition-timing-function: ease-out;
+  background-repeat: no-repeat;
+  z-index: 2; }
+
+.fill_theoBlue {
+  fill: #10171e !important; }
+
+body {
+  margin: 0;
+  font: 100% Helvetica, sans-serif;
+  color: #333; }
+  body #wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    body #wrapper #main {
+      width: 100%;
+      height: 100%;
+      background: #10171e;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row; }
+      body #wrapper #main .content {
+        width: 100%;
+        height: 100%; }
+  body #topmenu {
+    width: 100%;
+    height: 8%;
+    padding: 1% 0;
+    position: absolute;
+    display: block;
+    top: 0; }
+    body #topmenu:before {
+      width: 0;
+      border-top: 2px solid #10171e;
+      content: "";
+      bottom: -100%;
+      position: relative;
+      transition: all .5s ease-in-out;
+      display: block;
+      margin: auto; }
+    body #topmenu .content {
+      position: relative;
+      width: 100%;
+      height: 15%; }
+  body section#intro {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    body section#intro #text-intro {
+      width: 47%;
+      font-family: "montserrat", serif;
+      font-size: 4vw;
+      color: white;
+      align-items: right;
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      flex-flow: row wrap;
+      margin-top: -6%; }
+      body section#intro #text-intro #text-part1, body section#intro #text-intro #text-part2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: right;
+        align-items: center; }
+        body section#intro #text-intro #text-part1 div, body section#intro #text-intro #text-part2 div {
+          margin: 0; }
+          body section#intro #text-intro #text-part1 div.letter, body section#intro #text-intro #text-part2 div.letter {
+            opacity: 0; }
+          body section#intro #text-intro #text-part1 div.space, body section#intro #text-intro #text-part2 div.space {
+            color: transparent; }
+        body section#intro #text-intro #text-part1 #cursor, body section#intro #text-intro #text-part2 #cursor {
+          height: 40%;
+          width: 10px;
+          position: absolute;
+          opacity: 0;
+          background-position: 0 0;
+          background-image: url("/bundles/framework/images/specimages/gradiant.jpg"); }
+    body section#intro .logo_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-flow: row wrap;
+      z-index: 1;
+      width: 47%;
+      height: 60%;
+      position: absolute; }
+      body section#intro .logo_container .svg_container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-flow: row wrap;
+        width: 100%;
+        height: 100%; }
+        body section#intro .logo_container .svg_container .svg_content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          flex-flow: row wrap;
+          width: 100%;
+          height: 100%; }
+          body section#intro .logo_container .svg_container .svg_content svg {
+            position: absolute; }
+          body section#intro .logo_container .svg_container .svg_content svg[data-elem="A-gradient-shadow"] path[data-elem="plein-word"] {
+            transform-origin: 50% 50%;
+            fill: #10171e;
+            stroke-width: 8px;
+            stroke: white;
+            stroke-dashoffset: 374px;
+            stroke-dasharray: 0px, 724px;
+            stroke-linejoin: "round";
+            stroke-linecap: "round"; }
+          body section#intro .logo_container .svg_container .svg_content svg[data-elem="A-gradient-shadow"] path[data-elem="gradient-word"] {
+            stroke-linejoin: "miter";
+            stroke-miterlimit: 10;
+            stroke-width: 9px;
+            stroke: #10171e;
+            stroke-dashoffset: -131px;
+            stroke-dasharray: 620px, 0px; }
+          body section#intro .logo_container .svg_container .svg_content svg[data-elem="A-gradient-shadow"] path[data-elem="plein-word-mask"] {
+            stroke-linejoin: "round";
+            stroke-width: 1px;
+            stroke: #10171e; }
+          body section#intro .logo_container .svg_container .svg_content svg[data-elem="vir-gradient-shadow"] {
+            opacity: 0; }
+            body section#intro .logo_container .svg_container .svg_content svg[data-elem="vir-gradient-shadow"] path[data-elem="mask-vir"] {
+              fill: #10171e;
+              stroke-width: 18px;
+              stroke: #10171e;
+              stroke-dasharray: 580, 115;
+              stroke-dashoffset: 0;
+              stroke-linecap: "round"; }
+            body section#intro .logo_container .svg_container .svg_content svg[data-elem="vir-gradient-shadow"] path[data-elem="virgule"] {
+              opacity: 0; }
+          body section#intro .logo_container .svg_container .svg_content svg[data-elem="word-carasco"] {
+            fill: transparent;
+            transform-origin: 50% 50%;
+            height: 50%;
+            width: 100%;
+            top: 0; }
+            body section#intro .logo_container .svg_container .svg_content svg[data-elem="word-carasco"].moved {
+              transform: translateY(20%) scale(1.2);
+              transition: all 0.5s ease; }
+            body section#intro .logo_container .svg_container .svg_content svg[data-elem="word-carasco"] path {
+              fill: white; }
+            body section#intro .logo_container .svg_container .svg_content svg[data-elem="word-carasco"] path[data-elem="mask-A"] {
+              stroke: #10171e;
+              stroke-width: 4px;
+              stroke-dasharray: 195px; }
+            body section#intro .logo_container .svg_container .svg_content svg[data-elem="word-carasco"] path[data-elem="under-maskA"] {
+              fill: url(#gradient_rose_little); }
+          body section#intro .logo_container .svg_container .svg_content svg[data-elem="word-design"] {
+            transform-origin: 50% 50%;
+            height: 50%;
+            width: 100%;
+            bottom: 0; }
+            body section#intro .logo_container .svg_container .svg_content svg[data-elem="word-design"] path {
+              fill: #a5a5a5; }
+
+/*# sourceMappingURL=main.css.map */

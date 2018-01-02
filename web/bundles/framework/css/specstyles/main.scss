@@ -1,0 +1,282 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$duration : 10s;
+$theoBlue : rgba(16,23,30,1);
+
+//media queries
+$smartphone-width: 360px;
+$tablet-width: 720px;
+$desktop-width: 1024px;
+
+@mixin smartphone {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+//fonts
+@font-face {
+  font-family: 'montserrat';
+  src : url('/bundles/framework/css/fonts/montserrat/Montserrat-ExtraLight.ttf') format('TrueType');
+}
+
+.mask{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background: linear-gradient(115deg, white 0%, white 80%, rgba(255, 255, 255, 0) 100%);
+  background-size: 200% 200%;
+  transition-timing-function: ease-out;
+  background-repeat:no-repeat;
+  z-index:2;
+}
+
+.fill_theoBlue{
+  fill:$theoBlue !important;
+}
+
+body {
+  margin: 0;
+  font: 100% $font-stack;
+  color: $primary-color;
+
+  #wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    #main {
+      width: 100%;
+      height: 100%;
+      background: $theoBlue;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+
+      .content{
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+
+  #topmenu {
+    width: 100%;
+    height: 8%;
+    padding: 1% 0;
+    position: absolute;
+    display:block;
+    top:0;
+
+    &:before {
+      width: 0;
+      border-top: 2px solid #10171e;
+      content: "";
+      bottom: -100%;
+      position: relative;
+      transition: all .5s ease-in-out;
+      display: block;
+      margin: auto;
+    }
+
+    .content {
+      position: relative;
+      width: 100%;
+      height:15%;
+    }
+  }
+
+  section#intro {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    #text-intro{
+      width:47%;
+      font-family: "montserrat", serif;
+      font-size:4vw;
+      color:white;
+      align-items: right;
+      display: flex;
+      position: relative;
+      //justify-content: center;
+      flex-direction: row;
+      flex-flow: row wrap;
+      margin-top: -6%;
+
+      #text-part1, #text-part2{
+        display: flex;
+        //justify-content: center;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align:right;
+        align-items: center;
+        //border:1px solid green;
+
+        & div{
+          margin:0;
+          &.letter{
+            opacity:0;
+          }
+          &.space{
+            color:transparent;
+          }
+        }
+        #cursor{
+          height: 40%;
+          width: 10px;
+          position: absolute;
+          opacity:0;
+          //background-size:600% 100%;
+          background-position:0 0;
+          background-image:url('/bundles/framework/images/specimages/gradiant.jpg');
+        }
+      }
+    }
+    .logo_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-flow: row wrap;
+      z-index: 1;
+      width: 47%;
+      height: 60%;
+      position:absolute;
+
+      .svg_container{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-flow: row wrap;
+        width:100%;
+        height:100%;
+
+        .svg_content{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          flex-flow: row wrap;
+          width:100%;
+          height:100%;
+
+          svg {
+            position: absolute;
+          }
+
+          svg[data-elem="A-gradient-shadow"] {
+            //border:1px solid red;
+
+            path[data-elem="plein-word"] {
+              transform-origin: 50% 50%;
+              fill: $theoBlue;
+              stroke-width: 8px;
+              //stroke:url(#white_line);
+              stroke: white;
+              stroke-dashoffset: 374px;
+              stroke-dasharray: 0px, 724px;
+              //stroke-dasharray: 724px, 724px;
+              stroke-linejoin: "round";
+              stroke-linecap: "round";
+            }
+            path[data-elem="gradient-word"] {
+              stroke-linejoin: "miter";
+              stroke-miterlimit: 10;
+              stroke-width: 9px;
+              stroke: #10171e;
+              stroke-dashoffset: -131px;
+              stroke-dasharray: 620px, 0px;
+            }
+            path[data-elem="plein-word-mask"] {
+              stroke-linejoin: "round";
+              stroke-width: 1px;
+              stroke: $theoBlue;
+            }
+          }
+          svg[data-elem="vir-gradient-shadow"] {
+            opacity: 0;
+
+            path[data-elem="mask-vir"] {
+              fill: $theoBlue;
+              stroke-width: 18px;
+              stroke: $theoBlue;
+              stroke-dasharray: 580, 115;
+              stroke-dashoffset: 0;
+              stroke-linecap: "round";
+            }
+            path[data-elem="virgule"] {
+              opacity: 0;
+            }
+          }
+          svg[data-elem="circles"] {
+
+            circle[data-elem="circle-gradiant-shadow"] {
+
+            }
+            circle[data-elem="circle-mack"] {
+
+            }
+          }
+          svg[data-elem="word-carasco"] {
+            fill: transparent;
+            transform-origin: 50% 50%;
+            height:50%;
+            width:100%;
+            top:0;
+            &.moved{
+              transform: translateY(20%) scale(1.2);
+              transition:all 0.5s ease;
+            }
+
+            path {
+              fill: white;
+            }
+            path.letter {
+              //transform: translate(4.5%, 17%);
+              //transform: ;
+            }
+            path[data-elem="mask-A"] {
+              stroke: $theoBlue;
+              stroke-width: 4px;
+              stroke-dasharray: 195px;
+            }
+            path[data-elem="under-maskA"] {
+              fill: url(#gradient_rose_little);
+            }
+
+          }
+
+          svg[data-elem="word-design"] {
+            transform-origin: 50% 50%;
+            height:50%;
+            width:100%;
+            bottom:0;
+
+            path {
+              fill: #a5a5a5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
