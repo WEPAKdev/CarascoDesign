@@ -30,6 +30,10 @@ $desktop-width: 1024px;
   font-family: 'montserrat';
   src : url('/bundles/framework/css/fonts/montserrat/Montserrat-ExtraLight.ttf') format('TrueType');
 }
+@font-face {
+  font-family: 'montserrat-reg';
+  src : url('/bundles/framework/css/fonts/montserrat/Montserrat-Regular.ttf') format('TrueType');
+}
 
 .mask{
   width:100%;
@@ -60,38 +64,38 @@ body {
       width: 100%;
       height: 100%;
       background: $theoBlue;
-      display: flex;
       position: relative;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-
     }
   }
 
   #topmenu {
     width: 100%;
-    height: 8%;
-    position: absolute;
-    display:block;
+    height: 10%;
+    position: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: right;
     top:0;
     right:0;
+    z-index:2;
 
-    &:before {
-      width: 0;
-      border-top: 2px solid #10171e;
-      content: "";
-      bottom: -100%;
-      position: relative;
-      transition: all .5s ease-in-out;
-      display: block;
-      margin: auto;
-    }
-
-    .content {
-      position: relative;
-      width: 100%;
-      height:15%;
+    nav{
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        padding-right: 20%;
+        width: 100%;
+        
+        item{
+            font-family:"montserrat-reg", sans-serif;
+            color: white;
+            opacity:0;
+            margin-right: 5%;
+            margin-top:-80px;
+        }
+        item:last-child{
+            margin-right:0;
+        }
     }
   }
 
@@ -117,6 +121,7 @@ body {
       flex-direction: row;
       flex-flow: row wrap;
       margin-top: -6%;
+      z-index:2;
 
       #text-part1, #text-part2{
         display: flex;
@@ -158,7 +163,7 @@ body {
       position:absolute;
       
       #intro-gif{
-          width:100%;
+          //width:100%;
           height:100%;
       }
     }

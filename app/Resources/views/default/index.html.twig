@@ -1,14 +1,12 @@
 {% extends 'base.html.twig' %}
     {% block body %}
          <div id="topmenu">
-             <div class="content">
-                 <nav>
-                     <item>menu1</item>
-                     <item>menu2</item>
-                     <item>menu3</item>
-                     <item>menu4</item>
-                 </nav>
-             </div>
+            <nav>
+                <item>About</item>
+                <item>Portfolio</item>
+                <item>Service</item>
+                <item>Contact</item>
+            </nav>
          </div>
          <section class="container" id="intro">
              <div id="text-intro">
@@ -32,11 +30,16 @@
                      </div>
                  </div>
              </div>
-             <div class="logo_container">
+             <div id="intro-gif-cont" class="logo_container">
                  {% image 'bundles/framework/images/specimages/GIF_INTRO.gif'
                     output='/images/intro.gif' %}
                     <img id="intro-gif" src="{{ asset_url }}" alt="CARASCO DESIGN"/>
                  {% endimage %}
+             </div>
+             <div id="waves-cont">
+                 <div id="white-wave">
+                     
+                 </div>
              </div>
          </section>
          <section id="acc-pg1">

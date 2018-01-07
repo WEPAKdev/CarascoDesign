@@ -295,14 +295,21 @@ $(document).ready(function()
     }
 
     //add class "moved" to TODAY word to move it into the page
-    function moveToday() {
+    function moveToday(){
         $('svg[data-elem="word-carasco"]').addClass("moved");
     }
 
     //load intro animations
     function runIntroAnims(){
-        //typewrite();
+        tl = new TimelineLite();
+        tl
+              .to($('#intro-gif-cont'), 0.5, {scale: 0.5, top: '-42%',left: '-20%',ease: Power4.easeOut}, "+=5.5")
+              .staggerTo($('#topmenu item'), 0.5, {marginTop:"0", opacity:1, ease: Power4.easeOut}, 0.08, "-=0.5")
+            //.to($('#intro-gif'), 0.5, {opacity:0}, "+=5.5")
+            //.call(typewrite, [], this, "+=0");
     }
+    
+    
     //init anims SVG (set pattern anim)
     initSVGAnims();
 
@@ -325,7 +332,7 @@ $(document).ready(function()
 
         //deplacer le curseur a la lettre suivante //desopacifier la lettre courante //repeter
         var length = letters.length - 1;
-        var interval = 0.4;
+        var interval = 0.1;
         var returnAt = 11;
         tl = new TimelineLite();
         for(var i = 0; i < length; i++){
